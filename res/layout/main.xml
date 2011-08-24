@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:fillViewport="true">
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+			<EditText android:id="@+id/Mobile" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</EditText> 
+			<Button android:id="@+id/Contact"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>      
+			<EditText android:id="@+id/MsgCount" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>        
+			<Spinner android:id="@+id/Interval" android:layout_width="fill_parent" android:layout_height="wrap_content"
+			 android:prompt="@string/Interval_Chooser"></Spinner>
+			<CheckBox android:id="@+id/OwnMessage" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</CheckBox>
+			<EditText android:id="@+id/MsgText" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>	
+			<Button android:text="Send" android:id="@+id/Send" android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			</Button>	
+			<Button android:text="Stop! Please!" android:id="@+id/Stop" android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			</Button>
+			<Button android:text="Exit" android:id="@+id/Exit" android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			</Button>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
